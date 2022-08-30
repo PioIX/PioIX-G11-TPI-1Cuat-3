@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='cody.css')}}">
+<!--     <link rel="stylesheet" href="{{url_for('static',filename='cody.js')}}"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="area">
+    <ul class="circles"> 
+    <button class="mainmenu" onclick= "location.href='https://pioixg11-tpi-1cuat-2.damian-efrainef.repl.co/'">MENU</button>
+    <a href="javascript:abrir()"><button id="ayuda">?</button></a>
+    <div class="ventana" id="vent">
+        <div id="cerrar"><a href="javascript:cerrar()"><img src="static/img/cerrar.png"></div></a>
+        📜Reglas del CodyCross📌
+         <br></br>
+         <p class="texto">✅ El juego consiste en adivinar las palabras mediante las pistas</p>
+      </div>
+    <h1>CodyCross</h1>
+   <div id="Palabras">
+
+
+     
+            <div class="Palabra" id="Palabra1">
+
+              
+                <input type="letter" maxlength="1" id="1" onclick="mostrarPista(0); leerPalabraColocada(1,6)">
+                <input type="letter" maxlength="1" id="2" onclick="mostrarPista(0); leerPalabraColocada(1,6)">
+                <input type="letter" maxlength="1" id="3" onclick="mostrarPista(0); leerPalabraColocada(1,6)">
+                <input type="letter" maxlength="1" id="4" onclick="mostrarPista(0); leerPalabraColocada(1,6)">
+                <input type="letter" maxlength="1" id="5" onclick="mostrarPista(0); leerPalabraColocada(1,6)">
+                <input type="letter" maxlength="1" id="6" onclick="mostrarPista(0); leerPalabraColocada(1,6)">
+            </div>
+            <div class="Palabra" id="Palabra2">
+                <input type="letter" maxlength="1" id="7" onclick="mostrarPista(1); leerPalabraColocada(7,12)">
+                <input type="letter" maxlength="1" id="8" onclick="mostrarPista(1); leerPalabraColocada(7,12)">
+                <input type="letter" maxlength="1" id="9" onclick="mostrarPista(1); leerPalabraColocada(7,12)">
+                <input type="letter" maxlength="1" id="10" onclick="mostrarPista(1); leerPalabraColocada(7,12)">
+                <input type="letter" maxlength="1" id="11" onclick="mostrarPista(1); leerPalabraColocada(7,12)">
+                <input type="letter" maxlength="1" id="12" onclick="mostrarPista(1); leerPalabraColocada(7,12)">
+            </div>
+            <div class="Palabra" id="Palabra3">
+                <input type="letter" maxlength="1" id="13" onclick="mostrarPista(2); leerPalabraColocada(13,18)">
+                <input type="letter" maxlength="1" id="14" onclick="mostrarPista(2); leerPalabraColocada(13,18)">
+                <input type="letter" maxlength="1" id="15" onclick="mostrarPista(2); leerPalabraColocada(13,18)">
+                <input type="letter" maxlength="1" id="16" onclick="mostrarPista(2); leerPalabraColocada(13,18)">
+                <input type="letter" maxlength="1" id="17" onclick="mostrarPista(2); leerPalabraColocada(13,18)">
+                <input type="letter" maxlength="1" id="18" onclick="mostrarPista(2); leerPalabraColocada(13,18)">
+            </div>
+        
+            <div class="Palabra" id="Palabra4">
+                <input type="letter" maxlength="1" id="19" onclick="mostrarPista(3); leerPalabraColocada(19,24)">
+                <input type="letter" maxlength="1" id="20" onclick="mostrarPista(3); leerPalabraColocada(19,24)">
+                <input type="letter" maxlength="1" id="21" onclick="mostrarPista(3); leerPalabraColocada(19,24)">
+                <input type="letter" maxlength="1" id="22" onclick="mostrarPista(3); leerPalabraColocada(19,24)">
+                <input type="letter" maxlength="1" id="23" onclick="mostrarPista(3); leerPalabraColocada(19,24)">
+                <input type="letter" maxlength="1" id="24" onclick="mostrarPista(3); leerPalabraColocada(19,24)">
+            </div>
+           
+            <div class="Palabra" id="Palabra5">
+                <input type="letter" maxlength="1" id="25" onclick="mostrarPista(4); leerPalabraColocada(25,30)">
+                <input type="letter" maxlength="1" id="26" onclick="mostrarPista(4); leerPalabraColocada(25,30)">
+                <input type="letter" maxlength="1" id="27" onclick="mostrarPista(4); leerPalabraColocada(25,30)">
+                <input type="letter" maxlength="1" id="28" onclick="mostrarPista(4); leerPalabraColocada(25,30)">
+                <input type="letter" maxlength="1" id="29" onclick="mostrarPista(4); leerPalabraColocada(25,30)">
+                <input type="letter" maxlength="1" id="30" onclick="mostrarPista(4); leerPalabraColocada(25,30)">
+            </div>
+            <div class="Palabra" id="Palabra6">
+                <input type="letter" maxlength="1" id="31" onclick="mostrarPista(5); leerPalabraColocada(31,36)">
+                <input type="letter" maxlength="1" id="32" onclick="mostrarPista(5); leerPalabraColocada(31,36)">
+                <input type="letter" maxlength="1" id="33" onclick="mostrarPista(5); leerPalabraColocada(31,36)">
+                <input type="letter" maxlength="1" id="34" onclick="mostrarPista(5); leerPalabraColocada(31,36)">
+                <input type="letter" maxlength="1" id="35" onclick="mostrarPista(5); leerPalabraColocada(31,36)">
+                <input type="letter" maxlength="1" id="36" onclick="mostrarPista(5); leerPalabraColocada(31,36)">
+            </div>
+  </div>
+      <section class="section2">
+        <p id='pista' >Selecciona una fila para ver la pista</p>
+      </section>
+    <div>
+    <button class="nuevoJuego" onclick="inicioJuego()">nuevo juego</button>
+    </div>
+     
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> 
+<!--     ❤❤❤     -->
+      <script src="{{url_for('static',filename='cody.js')}}"></script>
+<!--     ❤❤❤     -->
+    <script>
+      
+        function abrir(){
+            document.getElementById("vent").style.display="block";
+        }
+        function cerrar(){
+            document.getElementById("vent").style.display="none";
+        }
+
+      
+    </script>
+      
+      <footer>
+    Desarrolladores: Damian Bottini, Mateo Gonzalez, Nicolás Magno, Ian Ozafrán y Federico Salgado.
+</footer>
+</body>
+</html>
